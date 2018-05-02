@@ -16,7 +16,7 @@
         <form>
             <div class="input-wrap">
                 <label for="">姓名</label>
-                <input type="text" class="input-control">
+                <input data-rule="max:10|min:5" type="text" class="input-control">
                 <div class="input-error">
                     姓名格式有误
                 </div>
@@ -25,6 +25,7 @@
     </div>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="js/validator.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
