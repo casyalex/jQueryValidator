@@ -13,19 +13,49 @@
         <div class="header">
             <h1>check it!</h1>
         </div>
-        <form>
+        <form id="signup">
             <div class="input-wrap">
-                <label for="">姓名</label>
-                <input data-rule="max:10|min:5" type="text" class="input-control">
-                <div class="input-error">
+                <label>姓名</label>
+                <input name="name" data-rule='maxlength:10|minlength:2' type="text" class="input-control">
+                <div id="name-input-error" class="input-error">
                     姓名格式有误
                 </div>
             </div>
+            <div class="input-wrap">
+                <label>用户名</label>
+                <input name="username" data-rule='pattern:"^[a-z0-9]*$"|maxlength:18|minlength:3' type="text" class="input-control">
+                <div id="username-input-error" class="input-error">
+                     用户名...
+                </div>
+            </div>
+            <div class="input-wrap">
+                <label>年龄</label>
+                <input name="age" data-rule='max:99|min:18' type="text" class="input-control">
+                <div id="age-input-error" class="input-error">
+                     年龄格式有误
+                </div>
+            </div>
+            <div class="input-wrap">
+                <label>密码</label>
+                <input name="password" data-rule='pattern:"^[a-z0-9]*$"|maxlength:18|minlength:8' type="text" class="input-control">
+                <div id="password-input-error" class="input-error">
+                     密码格式有误
+                </div>
+            </div>
+            <div class="input-wrap">
+                <label>介绍</label>
+                <input name="intro" data-rule='required:false' type="text" class="input-control">
+                <div id="intro-input-error" class="input-error">
+                 介绍格式有误
+                </div>
+            </div>
+            <button type="submit">提交</button>
         </form>
     </div>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="js/validator.js"></script>
+    <script src="js/input.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
