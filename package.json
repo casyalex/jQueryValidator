@@ -1,0 +1,19 @@
+{
+  "name": "jqueryvalidator",
+  "version": "1.0.0",
+  "description": "jq validator插件复现",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/casyalex/jQueryValidator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/casyalex/jQueryValidator/issues"
+  },
+  "homepage": "https://github.com/casyalex/jQueryValidator#readme"
+}
